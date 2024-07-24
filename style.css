@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+a
+{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    overflow: hidden;
+}
+a::before
+{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    background: #24215a;
+    top: -100%;
+    left: -15%;
+    transition: .2s;
+}
+a:hover:before
+{
+    top: 0%;
+    transition: .5s;
+}
